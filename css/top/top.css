@@ -1,0 +1,318 @@
+.all {
+  color: #333;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.all .section_header {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all .section_header .event_search_div {
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  width: 260px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 10px 0;
+}
+
+.all .section_header .event_search_div .event_search_input {
+  background-color: transparent;
+  border: none;
+  color: #166091;
+}
+
+.all .section_header .event_search_div .search_icon {
+  height: 30px;
+}
+
+.all .top_section {
+  width: 85vw;
+  height: 1000px;
+  max-height: 70vh;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 0 7.5vw 0;
+  letter-spacing: .1em;
+}
+
+@media screen and (max-width: 500px) {
+  .all .top_section {
+    height: 90vh;
+    max-height: 90vh;
+  }
+}
+
+.all .top_section .top_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.all .top_section .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.all .top_section .main .subtitle {
+  font-size: 32px;
+  margin: 0px auto;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+@media screen and (max-width: 500px) {
+  .all .top_section .main .subtitle {
+    font-size: 18px;
+    margin: 100px auto 0px;
+  }
+}
+
+.all .top_section .main .maintitle {
+  font-size: 80px;
+  letter-spacing: .4em;
+  margin: 30px auto 60px;
+}
+
+@media screen and (max-width: 500px) {
+  .all .top_section .main .maintitle {
+    font-size: 60px;
+  }
+}
+
+.all .top_section .main .rounded_button.whats_sola_button {
+  width: 220px;
+  height: 30px;
+}
+
+.all .top_section .main .rounded_button {
+  cursor: pointer;
+  margin: auto;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #29aae273;
+  border: solid 2px white;
+  border-radius: 30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.all .top_section .main .rounded_button .button_text {
+  font-size: 16px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.all .top_section .main .rounded_button .arrow_img {
+  width: 60px;
+  margin: 0;
+}
+
+.all .top_section .main .rounded_button:hover {
+  background-color: transparent;
+}
+
+.all .section_title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin: 0;
+  cursor: pointer;
+}
+
+.all .event_section {
+  margin: 80px auto 200px;
+  width: 900px;
+  max-width: 90vw;
+}
+
+.all .event_section .event_body .no_result_text {
+  font-size: 14px;
+  letter-spacing: .1em;
+  color: #166091;
+}
+
+.all .event_section .event_body .event_div {
+  margin: auto;
+}
+
+.all .event_section .event_body .event_div .event_hr {
+  color: #adadad;
+}
+
+.all .event_section .event_body .event_div .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all .event_section .event_body .event_div .inner .text_tab {
+  width: 500px;
+  margin-right: 20px;
+}
+
+.all .event_section .event_body .event_div .inner .text_tab p {
+  font-size: 18px;
+  letter-spacing: .1em;
+}
+
+.all .event_section .event_body .event_div .inner .tag_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  width: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all .event_section .event_body .event_div .inner .details_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.all .event_section .event_body .event_div .inner .details_tab:hover {
+  opacity: .6;
+}
+
+.all .event_section .event_body .event_div .inner .details_tab .details_text {
+  font-size: 16px;
+  color: #939393;
+  letter-spacing: .1em;
+}
+
+.all .event_section .event_body .event_div .inner .details_tab .arrow_img {
+  width: 60px;
+}
+
+.all .whatsSolaSection {
+  margin: 80px auto 200px;
+  width: 900px;
+  max-width: 90vw;
+}
+
+.all .whatsSolaSection .whatsSolaBody {
+  line-height: 1.5;
+}
+
+.all .sloganSection {
+  margin: 80px auto 200px;
+  width: 900px;
+  max-width: 90vw;
+}
+
+.all .sloganSection .slogan_body_text {
+  font-size: 30px;
+  letter-spacing: .2;
+}
+
+.all .principalSection {
+  margin: 80px auto 200px;
+  width: 900px;
+  max-width: 90vw;
+}
+
+.all .principalSection .principalDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .all .principalSection .principalDiv {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.all .principalSection .principalDiv .takagiwa_img {
+  height: 240px;
+  margin: 20px;
+}
+
+.all .principalSection .principalDiv .textSection {
+  text-align: left;
+}
+
+.all .principalSection .principalDiv .textSection .principal_body_text {
+  text-align: left;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.all .principalSection .principalDiv .textSection .fromPrincipal {
+  text-align: right;
+  margin: 20px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=top.css.map */

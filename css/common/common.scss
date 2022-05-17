@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Noto_Sans_JP';
+    src: url("../fonts/Noto_Sans_JP/NotoSansJP-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Source_Code_Pro';
+    src: url("../fonts/Source_Code_Pro/SourceCodePro-Medium.ttf") format("truetype");
+}
+
+$font-main: 'Noto_Sans_JP',
+sans-serif;
+$font-sub: 'Source_Code_Pro',
+sans-serif;
+$breakpoints: ( 'sm': 'screen and (max-width: 500px)',
+'md': 'screen and (max-width: 768px)',
+'lg': 'screen and (max-width: 1000px)',
+'xl': 'screen and (max-width: 1200px)',
+) !default;
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    font-family: $font-main;
+    color: #333;
+    letter-spacing: .4;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.tag_div {
+    cursor: pointer;
+    margin: 0 5px 10px 5px;
+    background-color: #166091;
+    border-radius: 5px;
+    padding: 5px 10px;
+    .tag_text {
+        color: white;
+        font-size: 11px;
+        letter-spacing: .1em;
+        margin: 0;
+    }
+    transition: all .3s;
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.pdf_div {
+    background-color: white;
+    border: 2px solid #166091;
+    padding: 10px 20px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        opacity: .6;
+    }
+    // box-shadow: 3px 3px 3px #79797940;
+    p {
+        margin: 0;
+    }
+    .pdf_icon {
+        height: 50px;
+    }
+}
+
+.header_div {
+    // width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-items: center;
+    position: relative;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    .choose_language {
+        display: flex;
+        align-items: end;
+        justify-items: center;
+        .lang_outer {
+            cursor: pointer;
+            margin: auto 10px;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: solid 2px transparent;
+            p {
+                margin: 0;
+                font-size: 16px;
+                color: white;
+            }
+            &.selected {
+                background-color: #29aae273;
+                border: solid 2px white;
+            }
+        }
+    }
+}
+
+.links {
+    color: #166091;
+    text-decoration: underline;
+    word-wrap: break-word;
+}

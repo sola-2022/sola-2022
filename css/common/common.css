@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Noto_Sans_JP';
+  src: url("../fonts/Noto_Sans_JP/NotoSansJP-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Source_Code_Pro';
+  src: url("../fonts/Source_Code_Pro/SourceCodePro-Medium.ttf") format("truetype");
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto_Sans_JP", sans-serif;
+  color: #333;
+  letter-spacing: .4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.tag_div {
+  cursor: pointer;
+  margin: 0 5px 10px 5px;
+  background-color: #166091;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.tag_div .tag_text {
+  color: white;
+  font-size: 11px;
+  letter-spacing: .1em;
+  margin: 0;
+}
+
+.tag_div:hover {
+  opacity: .6;
+}
+
+.pdf_div {
+  background-color: white;
+  border: 2px solid #166091;
+  padding: 10px 20px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.pdf_div:hover {
+  opacity: .6;
+}
+
+.pdf_div p {
+  margin: 0;
+}
+
+.pdf_div .pdf_icon {
+  height: 50px;
+}
+
+.header_div {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_div .choose_language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-items: center;
+}
+
+.header_div .choose_language .lang_outer {
+  cursor: pointer;
+  margin: auto 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: solid 2px transparent;
+}
+
+.header_div .choose_language .lang_outer p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.header_div .choose_language .lang_outer.selected {
+  background-color: #29aae273;
+  border: solid 2px white;
+}
+
+.links {
+  color: #166091;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,231 @@
+$font-main: 'Noto_Sans_JP',
+sans-serif;
+$font-sub: 'Source_Code_Pro',
+sans-serif;
+$breakpoints: ( 'sm': 'screen and (max-width: 500px)', 'md': 'screen and (max-width: 768px)', 'lg': 'screen and (max-width: 1000px)', 'xl': 'screen and (max-width: 1200px)', ) !default;
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+.all {
+    color: #333;
+    width: 100vw;
+    overflow-x: hidden;
+    .section_header {
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .event_search_div {
+            background-color: #f2f2f2;
+            padding: 10px 10px;
+            width: 260px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin: 10px 0;
+            .event_search_input {
+                background-color: transparent;
+                border: none;
+                color: #166091;
+            }
+            .search_icon {
+                height: 30px;
+            }
+        }
+    }
+    .top_section {
+        width: 85vw;
+        height: 1000px;
+        max-height: 70vh;
+        @include mq(sm) {
+            height: 90vh;
+            max-height: 90vh;
+        }
+        position: relative;
+        color: white;
+        text-align: center;
+        padding: 0 7.5vw 0;
+        letter-spacing: .1em;
+        .top_image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            .subtitle {
+                font-size: 32px;
+                margin: 0px auto;
+                @include mq(sm) {
+                    font-size: 18px;
+                    margin: 100px auto 0px;
+                }
+                font-weight: 300;
+                letter-spacing: .1em;
+            }
+            .maintitle {
+                font-size: 80px;
+                letter-spacing: .4em;
+                margin: 30px auto 60px;
+                @include mq(sm) {
+                    font-size: 60px;
+                }
+            }
+            .rounded_button.whats_sola_button {
+                width: 220px;
+                height: 30px;
+            }
+            .rounded_button {
+                cursor: pointer;
+                margin: auto;
+                padding: 10px 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #29aae273;
+                border: solid 2px white;
+                border-radius: 30px;
+                .button_text {
+                    font-size: 16px;
+                    margin: 0;
+                    padding-left: 20px;
+                }
+                .arrow_img {
+                    width: 60px;
+                    margin: 0;
+                }
+                transition: all .3s;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .section_title {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: .1em;
+        margin: 0;
+        cursor: pointer;
+    }
+    .event_section {
+        margin: 80px auto 200px;
+        width: 900px;
+        max-width: 90vw;
+        .event_body {
+            .no_result_text {
+                font-size: 14px;
+                letter-spacing: .1em;
+                color: #166091;
+            }
+            .event_div {
+                margin: auto;
+                .event_hr {
+                    color: #adadad;
+                }
+                .inner {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .text_tab {
+                        width: 500px;
+                        p {
+                            font-size: 18px;
+                            letter-spacing: .1em;
+                        }
+                        margin-right: 20px;
+                    }
+                    .tag_tab {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        margin-right: 20px;
+                        width: 200px;
+                        flex-wrap: wrap;
+                    }
+                    .details_tab {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: all .3s;
+                        &:hover {
+                            opacity: .6;
+                        }
+                        .details_text {
+                            font-size: 16px;
+                            color: #939393;
+                            letter-spacing: .1em;
+                        }
+                        .arrow_img {
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .whatsSolaSection {
+        margin: 80px auto 200px;
+        width: 900px;
+        max-width: 90vw;
+        .whatsSolaBody {
+            line-height: 1.5;
+        }
+    }
+    .sloganSection {
+        margin: 80px auto 200px;
+        width: 900px;
+        max-width: 90vw;
+        .slogan_body_text {
+            font-size: 30px;
+            letter-spacing: .2;
+        }
+    }
+    .principalSection {
+        margin: 80px auto 200px;
+        width: 900px;
+        max-width: 90vw;
+        .principalDiv {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            @include mq(sm) {
+                flex-wrap: wrap;
+            }
+            .takagiwa_img {
+                height: 240px;
+                margin: 20px;
+            }
+            .textSection {
+                text-align: left;
+                .principal_body_text {
+                    text-align: left;
+                    margin: 20px;
+                    line-height: 1.5;
+                }
+                .fromPrincipal {
+                    text-align: right;
+                    margin: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

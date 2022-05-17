@@ -1,0 +1,57 @@
+.all {
+    color: #333;
+    width: 100vw;
+    overflow-x: hidden;
+    .header_div {
+        padding: 0 20px;
+        justify-content: space-between;
+        .logo_img {
+            height: 22px;
+        }
+        .choose_language {
+            .lang_outer {
+                p {
+                    color: #adadad;
+                }
+                &.selected {
+                    background-color: transparent;
+                    border: solid 2px #166091;
+                    p {
+                        color: #166091;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        margin: 80px auto 300px;
+        width: 800px;
+        max-width: 85vw;
+        .main_title {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: .1em;
+            margin: 60px 0 20px;
+        }
+        .event_title {
+            color: #166091;
+            font-size: 30px;
+            letter-spacing: .1em;
+            margin: 0 0 10px;
+        }
+        .tags_list {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            margin: 0 0 40px;
+        }
+        .event_disc,
+        .participation_right {
+            font-size: 16px;
+            letter-spacing: .1em;
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+}
