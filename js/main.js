@@ -638,11 +638,11 @@ const event_data = [{
         ]
     },
     {
-        "id": "DOC18W",
+        "id": "DOC18Q",
         "title": "第2回SOLAクイズ王決定戦",
         "tags": [
             "日本語企画",
-            "ワークショップ",
+            "クイズ",
             "中学生",
             "高校生"
         ],
@@ -653,7 +653,7 @@ const event_data = [{
         "participationRightEn": "(1) 中学生または高校生であること",
         "tagsEn": [
             "Japanese",
-            "Workshop",
+            "Quiz",
             "Juniors",
             "High School"
         ]
