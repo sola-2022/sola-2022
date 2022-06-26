@@ -6,6 +6,15 @@ const translateText = [
         `　中高生が中心となり、互いに学び合いを深め共有することで社会課題に対する関心を高めるとともに、同じ理念を共有する仲間として今後協働できる環境を整えることを目的にSOLA（Shibuya Olympiad in Liberal Arts）は始まりました。今年はその2年目にあたります。世界の友人とともに「SDGs～私たちのつくる未来～　今、渋谷から発信する」をテーマに、会議・プレゼンテーション・ワークショップ・競技・プロジェクト等様々な形式で、課題についての理解を深めます。<br>　一人ひとりがSDGs達成を担う次世代地球市民として活躍できる社会を目指し、中高校生による中高校生のためのこの会から、より強いメッセージを世界に発信する場とします。<br>今年の「SOLA 2022」では、オンラインに加えて、対面での活動も取り入れたものとなっております。多くの皆様のご参加をお待ちしています。<br> <br>昨年のSOLA 2021については、こちらをご覧ください。<br><a class="links" target="_blank" href="https://shibushibusola2021.wixsite.com/sola2021">https://shibushibusola2021.wixsite.com/sola2021</a>`,
         `SOLA (Shibuya Olympiad in Liberal Arts) started as an event where junior high and high school students could create an environment to collaborate with like-minded peers who share the same philosophy of the future, as well as raise awareness of social challenges of today. This year's event will mark the 2nd year of SOLA. The theme is "SDGs―The Future We Create―Sending Messages from Shibuya" and we intend to cultivate a better understanding of social challenges through meetings, presentations, workshops, competitions, and projects with our friends from around the world.<br><br>Our aim is to create a society where each person takes part to achieve SDGs (Sustainable<br>Development Goals) as the next generation of global citizens, and we hope to make <br>this event "by the students, for the students,"  a place to send out even more powerful <br>messages to the world.<br><br>"SOLA 2022" will incorporate in-person activities in addition to online activities. <br>We are looking forward to everyone's participation.<br><br>For information about last year's event, "SOLA 2021", please visit the following link: <br><a class="links" target="_blank" href="https://shibushibusola2021.wixsite.com/sola2021" >https://shibushibusola2021.wixsite.com/sola2021<a>`
     ],
+
+    ['.details_title', 'イベント概要', 'EVENT DETAILS'],
+
+    ['.details_title_sub', 'イベント概要', 'EVENT DETAILS'],
+
+    ['.event_details_body', ` 日程：2022年8月18日<br> 場所：オンライン（17種目）・対面（1種目）<br> 参加資格: 中高生 <br> 主催: 渋谷教育学園渋谷中学高等学校SOLA 2022実行委員会<br> 問い合わせ先：solashibu2022@gmail.com`, '日程：2022年8月18日<br> 場所：オンライン（17種目）・対面（1種目）<br> 参加資格: 中高生 <br> 主催: 渋谷教育学園渋谷中学高等学校SOLA 2022実行委員会<br> 問い合わせ先：solashibu2022@gmail.com'],
+
+    ['.apply_button_text', '申し込みはこちら', 'Application Form'],
+
     ['.slogan_text', 'スローガン', 'SLOGAN'],
     [
         '.slogan_body_text',
