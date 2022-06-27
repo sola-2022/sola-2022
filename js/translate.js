@@ -11,7 +11,10 @@ const translateText = [
 
     ['.details_title_sub', 'イベント概要', 'EVENT DETAILS'],
 
-    ['.event_details_body', ` 日程：2022年8月18日<br> 場所：オンライン（17種目）・対面（1種目）<br> 参加資格: 中高生 <br> 主催: 渋谷教育学園渋谷中学高等学校SOLA 2022実行委員会<br> 問い合わせ先：solashibu2022@gmail.com`, '日程：2022年8月18日<br> 場所：オンライン（17種目）・対面（1種目）<br> 参加資格: 中高生 <br> 主催: 渋谷教育学園渋谷中学高等学校SOLA 2022実行委員会<br> 問い合わせ先：solashibu2022@gmail.com'],
+    ['.event_details_body',
+        `日程：2022年8月18日<br>場所：オンライン（17種目）・対面（1種目）<br>参加資格: 中高生 <br>主催: 渋谷教育学園渋谷中学高等学校SOLA 2022実行委員会<br>問い合わせ先：solashibu2022@gmail.com`,
+        'Date: August 18, 2022 (9:00-17:00 JST)<br>Requirements: Middle and high school students<br>Organizer: Shibuya Junior and Senior High School<br>Contact: solashibu2022@gmail.com'
+    ],
 
     ['.apply_button_text', '申し込みはこちら', 'Application Form'],
 
