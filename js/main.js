@@ -9,6 +9,10 @@ $(window).on('load', function() {
     if (location.href.indexOf('?answer=4387') >= 0) {
         location.href = 'https://ray-o-0509.github.io/cpipc_nazotoki/gj5sef.html';
     }
+    if (location.href.indexOf('?q=風の塔') >= 0) {
+        location.href = 'https://ray-o-0509.github.io/cpipc_nazotoki/towers/4fd3kt.html';
+    }
+
 
 
     if (location.href.indexOf('lang=jp') >= 0) {
