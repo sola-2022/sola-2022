@@ -3,6 +3,14 @@ $('#scrollTop').on('click', function() {
 });
 let langIsEn = true;
 $(window).on('load', function() {
+    if (location.href.indexOf('?answer=iroiro') >= 0) {
+        location.href = 'https://ray-o-0509.github.io/cpipc_nazotoki/4gerf0.html';
+    }
+    if (location.href.indexOf('?answer=4387') >= 0) {
+        location.href = 'https://ray-o-0509.github.io/cpipc_nazotoki/gj5sef.html';
+    }
+
+
     if (location.href.indexOf('lang=jp') >= 0) {
         langIsEn = false;
     } else {
