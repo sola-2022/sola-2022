@@ -167,13 +167,16 @@ function showEventList(num) {
             }
             let tags_html = '';
             for (let i = 0; i < 2; i++) {
+
                 tags_html += ` 
-                <div class="tag_div" onclick='searchTag("＃` + _tags[i] + `")'>
-                    <p class="tag_text">
-                        ＃` + _tags[i] + `
-                    </p>
-                </div>
-             `;
+                    <div class="tag_div" onclick='searchTag("＃` + _tags[i] + `")'>
+                        <p class="tag_text">
+                            ＃` + _tags[i] + `
+                        </p>
+                    </div>
+                 `;
+
+
             }
             add_html += `<div class="event_div">
         <hr class="event_hr">
@@ -232,13 +235,26 @@ function showEventDetails(index) {
         $('.participation_right').html(event_data[index]["participationRight"].replace(/\n/g, "<br />"));
         let tags_html = '';
         for (let i = 0; i < event_data[index]["tags"].length; i++) {
-            tags_html += ` 
+            if (event_data[index]["tags"][i] == 'FAKE' && location.href.indexOf('?eventId=DON09N') >= 0) {
+
+                tags_html += ` 
+                <a href="https://ray-o-0509.github.io/cpipc_nazotoki/towers/f23f3h.html">
+                <div class="tag_div" style="opacity: 0;">
+                    <p class="tag_text">
+                        ＃` + event_data[index]["tags"][i] + `
+                    </p>
+                </div>
+                </a>
+             `;
+            } else {
+                tags_html += ` 
                 <div class="tag_div" onclick='searchBackTag("＃` + event_data[index]["tags"][i] + `")'>
                     <p class="tag_text">
                         ＃` + event_data[index]["tags"][i] + `
                     </p>
                 </div>
              `;
+            }
         }
         $('.tags_list').html(tags_html);
     } else {
@@ -248,13 +264,28 @@ function showEventDetails(index) {
         $('.participation_right').html(event_data[index]["participationRightEn"].replace(/\n/g, "<br />"));
         let tags_html = '';
         for (let i = 0; i < event_data[index]["tagsEn"].length; i++) {
-            tags_html += ` 
+
+            if (event_data[index]["tagsEn"][i] == 'FAKE' && location.href.indexOf('?eventId=DON09N') >= 0) {
+
+                tags_html += ` 
+                <a href="https://ray-o-0509.github.io/cpipc_nazotoki/towers/f23f3h.html">
+                <div class="tag_div" style="opacity: 0;" onclick='searchBackTag("＃` + event_data[index]["tagsEn"][i] + `")'>
+                    <p class="tag_text">
+                        ＃` + event_data[index]["tagsEn"][i] + `
+                    </p>
+                </div>
+                </a>
+             `;
+            } else {
+                tags_html += ` 
                 <div class="tag_div" onclick='searchBackTag("＃` + event_data[index]["tagsEn"][i] + `")'>
                     <p class="tag_text">
                         ＃` + event_data[index]["tagsEn"][i] + `
                     </p>
                 </div>
              `;
+
+            }
         }
         $('.tags_list').html(tags_html);
 
@@ -495,7 +526,8 @@ const event_data = [{
             "日本語企画",
             "会議",
             "中学生",
-            "高校生"
+            "高校生",
+            "FAKE"
         ],
         "disc": "　僕たちのような中高生は学校などで教わることができるSDGsですが、大人たちにはそのような機会がほとんどありません。そのためSDGsと言われた時に名前は知ってるけど内容が全然分からないという大人が多いというのが社会の現状です。\n\n　そこでより多くの大人達にSDGsを名前だけでなく、それがどういうものなのか理解を深めてもらうにはどうしたらよいのかに関して、グループディスカッションを行います。\n\n　このディスカッションには個人で応募していただき、事前に運営側でグループに分け、当日はそのグループ内でディスカッションを行います。\n\n　そこで出た案は全体で発表して、互いに気づいた点をコメントしあうことで企画をより良いものとする時間も設ける予定です。\n\n　最終的な結論はグループごとにSDGs活動を行っている団体に提出します。\n\n　この企画は事前の準備は必要はありません。どうしたら大人も含めた多くの人にSDGsについてもっと知ってもらえるだろうと思っている人もそうでない人も、ぜひ気軽に応募してみてください!!!!!!!\n\n（※注意）この企画はSDGsの発信方法を考える企画で、SDGsの内容については議論しません。",
         "participationRight": "",
@@ -506,7 +538,8 @@ const event_data = [{
             "Japanese",
             "Conference",
             "Juniors",
-            "High School"
+            "High School",
+            "FAKE"
         ]
     },
     {
